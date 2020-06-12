@@ -6,3 +6,8 @@ https://marinecadastre.gov/ais/
 
 NTSB Reports - how to efficiently search????  
 https://www.ntsb.gov/investigations/accidentreports/pages/marine.aspx
+
+
+Design Patterns
+https://python-patterns.guide/  
+https://sourcemaking.com/design_patterns/  
