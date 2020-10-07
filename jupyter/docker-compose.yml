@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  jupyter_notebook:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    tty: true # Keeps container running, won't need with webserver.
+#    command: python hello.py
+    image: moose_jupyter/tensorflow
+    container_name: moose_jupyter
+    restart: unless-stopped
+    volumes:
+      - ./:/usr/src
+    ports:
+      - 8888:8888
+    environment:
+      - TZ=America/Chicago
+      - JUPYTER_TOKEN=easy
